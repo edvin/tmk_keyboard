@@ -3,7 +3,7 @@
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* 0: qwerty */
     KEYMAP_TORNADO(
-        GRV, 1,   2,   3,   4,   5, BSPC,6,   7,   8,   9,   0,   MINS,EQL,  \
+        ESC, 1,   2,   3,   4,   5, BSPC,6,   7,   8,   9,   0,   MINS,EQL,  \
         TAB, Q,   W,   E,   R,   T,      Y,   U,   I,   O,   P,   LBRC,RBRC, \
         FN0, A,   S,   D,   F,   G, ENT, H,   J,   K,   L,   SCLN,QUOT,BSLS, \
         LSFT,Z,   X,   C,   V,   B,      N,   M,   COMM,DOT, SLSH,RSFT,      \
@@ -17,10 +17,10 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TRNS,TRNS,TRNS,BTN1,          BTN2,          TRNS,TRNS,TRNS,TRNS),
     /* 2: F + Arrow Keys layer */
     KEYMAP_TORNADO(
-        ESC, F1,  F2,  F3,  F4,  F5,   DEL,F6,  F7,  F8,  F9,  F10, F11, F12, \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,PGUP,UP,  PGDN,PSCR,SLCK,PAUS,\
+        GRV, F1,  F2,  F3,  F4,  F5,   DEL,F6,  F7,  F8,  F9,  F10, F11, F12, \
+        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     KC_CALC,PGUP,UP,  PGDN,PSCR,SLCK,PAUS,\
         TRNS,TRNS,VOLD,VOLU,MUTE,TRNS,TRNS,HOME,LEFT,DOWN,RGHT,INS,DEL,TRNS,  \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     \
+        TRNS,KC_APP,TRNS,TRNS,TRNS,TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     \
         TRNS,TRNS,TRNS,TRNS,          TRNS,          TRNS,TRNS,TRNS,TRNS),
 };
 const action_t PROGMEM fn_actions[] = {
