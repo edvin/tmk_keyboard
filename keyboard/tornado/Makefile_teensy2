@@ -39,7 +39,7 @@
 #----------------------------------------------------------------------------
 
 # Target file name (without extension).
-TARGET = tornado
+TARGET = tornado_teensy2
 
 # Directory common source filess exist
 TMK_DIR = ../../tmk_core
@@ -48,7 +48,7 @@ TMK_DIR = ../../tmk_core
 TARGET_DIR = .
 
 # project specific files
-SRC =	matrix.c \
+SRC =	matrix_teensy2.c \
 	led.c
 
 SRC := keymap_tornado.c $(SRC)
